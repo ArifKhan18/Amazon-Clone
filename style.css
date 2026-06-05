@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -24,26 +24,40 @@
     width: 100%;
     background-size: cover;
 }
-.borrder{
-    border: 1px solid transparent;
+
+/* white border */
+.borrder {
+   border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 6px 8px; /* Content er charpashe space nibe jate box ta boro dekhay */
+    border-radius: 2px; /* Amazon er moto ektu rounded corner er jonno */
+    cursor: pointer;
+    transition: border-color 0.2s ease;
 }
-.borrder:hover{
-    border: 1px solid white;
+
+.borrder:hover {
+    border-color: white;
 }
-.add-one{
+
+/* add address */
+.add-one {
     color: #cccccc;
     font-size: 0.85rem;
     margin-left: 20px;
 }
-.add-two{
+
+.add-two {
     color: #ffffff;
     font-size: 16px;
 }
-.add-icon{
+
+.add-icon {
     display: flex;
     align-items: center;
 }
-.nav-search{
+
+/* search */
+.nav-search {
     display: flex;
     align-items: center;
     margin-left: 20px;
@@ -54,26 +68,28 @@
     justify-content: space-evenly;
 }
 
-.nav-search:hover{
+.nav-search:hover {
     border: 2px solid orange;
 }
 
-.search-select{
+.search-select {
     background-color: #f3f3f3;
     width: 52px;
     text-align: center;
     height: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    border:none;
+    border: none;
 }
-.search-input{
+
+.search-input {
     height: 100%;
     width: 100%;
     font-size: 1rem;
     border: none;
 }
-.search-icon{
+
+.search-icon {
     width: 45px;
     display: flex;
     align-items: center;
@@ -85,17 +101,49 @@
     border-bottom-right-radius: 8px;
     color: black;
 }
-span{
+
+span {
     font-size: 0.7rem;
 }
-.nav-second{
+
+.nav-second {
     font-size: 0.85rem;
     font-weight: 700;
 }
-.nav-cart i{
+
+.nav-cart i {
     font-size: 30px;
 }
-.nav-cart{
+
+.nav-cart {
     font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* panel */
+.panel {
+    height: 39px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.panel-ops {
+    width: 80%;
+    font-size: 0.85rem;
+    height: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
     font-weight: 700;
 }
