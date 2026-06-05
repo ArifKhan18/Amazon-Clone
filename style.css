@@ -53,6 +53,11 @@
     border-radius: 8px;
     justify-content: space-evenly;
 }
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
 .search-select{
     background-color: #f3f3f3;
     width: 52px;
@@ -79,4 +84,18 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     color: black;
+}
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
 }
