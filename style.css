@@ -176,12 +176,22 @@ span {
 /* shop section */
 .box{
     border: 2px solid black;
-    height: 100px;
-    width: 20%; 
+    height: 400px;
+    width: 23%; 
+    background-color: white;
+    
 }
 .shop-section {
     display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    
     /* grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px; */
+}
+.shop-section h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    
 }
