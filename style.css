@@ -27,10 +27,12 @@
 
 /* white border */
 .borrder {
-   border: 1px solid transparent;
+    border: 1px solid transparent;
     box-sizing: border-box;
-    padding: 6px 8px; /* Content er charpashe space nibe jate box ta boro dekhay */
-    border-radius: 2px; /* Amazon er moto ektu rounded corner er jonno */
+    padding: 6px 8px;
+    /* Content er charpashe space nibe jate box ta boro dekhay */
+    border-radius: 2px;
+    /* Amazon er moto ektu rounded corner er jonno */
     cursor: pointer;
     transition: border-color 0.2s ease;
 }
@@ -147,6 +149,7 @@ span {
     font-size: 0.9rem;
     font-weight: 700;
 }
+
 /* hero section */
 .hero-section {
     background-image: url("logos_and_pictures/hero_image.jpg");
@@ -156,6 +159,7 @@ span {
     justify-content: center;
     align-items: flex-end;
 }
+
 .hero-msg {
     background-color: white;
     color: black;
@@ -163,35 +167,57 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:0.85rem;
+    font-size: 0.85rem;
     width: 80%;
     margin-bottom: 25px;
-    
+
 }
-.hero-msg a{
+
+.hero-msg a {
     text-decoration: none;
     font-weight: 700;
     color: #007185;
 }
+
 /* shop section */
-.box{
-    border: 2px solid black;
+.box {
     height: 400px;
-    width: 23%; 
+    width: 23%;
     background-color: white;
-    
+    padding: 20px 0px 15px 0px;
+    margin-top: 15px;
 }
+
 .shop-section {
     display: flex;
     justify-content: space-evenly;
     background-color: #e2e7e6;
-    
-    /* grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px; */
+    flex-wrap: wrap;
 }
-.shop-section h2{
-    font-size: 1.2rem;
+
+.box-image {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p {
+    margin-top: 10px;
+    /* move 'see more' a bit lower under the image */
+    color: #007185;
     font-weight: 700;
-    
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.box-content h2 {
+    text-align: center;
+    /* center the headings inside each box */
+    margin-bottom: 8px;
 }
